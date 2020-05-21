@@ -27,7 +27,7 @@ locals {
 
 module "us_vpc" {
   source  = "tfe.aws.shadowmonkey.com/spacelysprockets/ss_vpc/aws"
-  version = "0.2.1"
+  version = "0.2.2"
 
   cidr_block = "10.11.0.0/16"
   vpc_name   = "us_node"
@@ -45,7 +45,7 @@ module "us_vpc" {
 
 module "eu_vpc" {
   source  = "tfe.aws.shadowmonkey.com/spacelysprockets/ss_vpc/aws"
-  version = "0.2.1"
+  version = "0.2.2"
 
   cidr_block = "10.21.0.0/16"
   vpc_name   = "eu_node"
