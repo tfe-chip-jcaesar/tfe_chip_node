@@ -25,34 +25,34 @@ locals {
 # US West 1 VPC
 # -----------------------------------------------------------------------------
 
-module "us_vpc" {
-  source  = "tfe.aws.shadowmonkey.com/spacelysprockets/ss_vpc/aws"
-  version = "0.2.1"
+# module "us_vpc" {
+#   source  = "tfe.aws.shadowmonkey.com/spacelysprockets/ss_vpc/aws"
+#   version = "0.2.1"
 
-  cidr_block = "10.11.0.0/16"
-  vpc_name   = "us_node"
-  tags       = local.common_tags
-  azs        = local.us_azs
+#   cidr_block = "10.11.0.0/16"
+#   vpc_name   = "us_node"
+#   tags       = local.common_tags
+#   azs        = local.us_azs
 
-  providers = {
-    aws = aws.us-west-1
-  }
-}
+#   providers = {
+#     aws = aws.us-west-1
+#   }
+# }
 
 # -----------------------------------------------------------------------------
 # EU Central 1 VPC
 # -----------------------------------------------------------------------------
 
-module "eu_vpc" {
-  source  = "tfe.aws.shadowmonkey.com/spacelysprockets/ss_vpc/aws"
-  version = "0.2.1"
+# module "eu_vpc" {
+#   source  = "tfe.aws.shadowmonkey.com/spacelysprockets/ss_vpc/aws"
+#   version = "0.2.1"
 
-  cidr_block = "10.21.0.0/16"
-  vpc_name   = "eu_node"
-  tags       = local.common_tags
-  azs        = local.eu_azs
+#   cidr_block = "10.21.0.0/16"
+#   vpc_name   = "eu_node"
+#   tags       = local.common_tags
+#   azs        = local.eu_azs
 
-  providers = {
-    aws = aws.eu-central-1
-  }
-}
+#   providers = {
+#     aws = aws.eu-central-1
+#   }
+# }
